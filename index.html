@@ -2,72 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Templates are present formats for documents or files."
+      content="A game of concentration to test your memory or learn vocabulary"
     />
-    <link
-      rel="icon"
-      href="./src/img/favicon.svg"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="./src/img/apple-touch-img.png"
-    />
-    <link
-      rel="manifest"
-      href="./src/manifest.webmanifest"
-    />
-    <link
-      rel="stylesheet"
-      href="./src/css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./src/css/queries.css"
-    />
-    <script
-      type="module"
-      src="./src/js/controller.js"
-    ></script>
-    <title>Template &mdash; Title</title>
+    <link rel="icon" href="./src/img/favicon.svg" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/queries.css" />
+    <script type="module" src="./src/js/controller.js"></script>
+    <title>Concentration &mdash; Memory Game</title>
   </head>
 
   <body>
     <header class="header">
       <a href="#"
         ><img
-          src="./src/img/favicon-192.png"
-          alt="An icon with three symbols: the smaller than sign, the slash, and the greater than sign"
+          src="./src/img/favicon.svg"
+          alt="A computer memory chip symbolizing human memory, a skill highly useful for the game of concentration"
           height="20px"
       /></a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#">Link1</a></li>
-          <li><a href="#">Link2</a></li>
-          <li><a href="#">Link3</a></li>
+          <li>
+            <a class="nav-list-link" href="#">Play</a>
+          </li>
+          <li>
+            <a class="nav-list-link" href="#">Rules</a>
+          </li>
+          <li>
+            <a class="nav-list-link" href="#">How To</a>
+          </li>
         </ul>
       </nav>
-
-      <button class="btn-mobile-nav">open-img / close-img</button>
     </header>
 
     <main>
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
-            <h1>Hero Header (h1)</h1>
+            <h1>Concentration: A Game Of Memory</h1>
           </div>
-          <div class="hero-img-box">IMG</div>
+        </div>
+      </section>
+
+      <section class="section-play">
+        <div class="play-area"></div>
+      </section>
+
+      <section class="section-rules">
+        <div class="rules">
+          <ol class="ordered-list ol-rules">
+            <li>Flip two cards per turn</li>
+            <li>Find identical card pairs</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-instructions">
+        <div class="instructions">
+          <ol class="ordered-list ol-instructions">
+            <li>Input words in the left field</li>
+            <li>Copy them if you want truly identical cards</li>
+            <li>Write equivalent meaning in the right field otherwise</li>
+          </ol>
         </div>
       </section>
     </main>
 
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+      This project was made by
+      <a
+        href="https://github.com/ErreurDeSyntaxe"
+        class="footer-link"
+        target="_blank"
+        >ErreurDeSyntax</a
+      >
+      for himself and his colleagues at Mingder High.
+    </footer>
   </body>
 </html>
