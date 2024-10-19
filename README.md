@@ -47,10 +47,11 @@ The project has two main goals of equal importance. First, I want to provide a f
   - [x] Architecture
   - [x] UI Design
 - [ ] Development
-  - [ ] Basic HTML
-    - [ ] Title
-    - [ ] Meta
-    - [ ] Rough Structure
+  - [x] Basic HTML
+    - [x] Title
+    - [x] Meta
+    - [x] Rough Structure
+    - [x] Favicons
   - [ ] Parcel
     - [ ] "npm init"
     - [ ] Remove "main": "index.js"
