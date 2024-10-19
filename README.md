@@ -62,11 +62,12 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [ ] Run Local Host With CLI: "npm start"
     - [ ] Build Deployment-Ready Files With CLI: "npm run build"
   - [ ] Console-Based Logic
-  - [ ] UI Features
-    - [ ] UI Sketch
+  - [ ] UI
+    - [ ] Refined UI
+    - [ ] Color Palette
     - [ ] Overall Layout
     - [ ] Individual Section Layout
-    - [ ] Menu
+    - [ ] Menu/Nav
   - [ ] Responsive Design
     - [ ] Media Queries
     - [ ] Mobile Menu
