@@ -1,6 +1,6 @@
-# Simple Template
+# Concentration
 
-A template for projects that may require Parcel
+A website to play a singleplayer, custom game of concentration. The user inputs a list of words. The application generates the cards, lays them randomly in a grid formation, and allows the user to play according to the rules. Each turn allows the player to flip to cards. If they are identical, the cards remain face up. Otherwise, they are flipped back down.
 
 ## About the Project
 
@@ -12,18 +12,16 @@ A template for projects that may require Parcel
 
 ### Live
 
-<a href='http://google.com/'>Google</a>
+<a href='https://erreurdesyntaxe.github.io/concentration/'>Concentration</a>
 
 ### Objective
 
-The goal of the project is to learn xyz by building abc.
+The project has two main goals of equal importance. First, I want to provide a fun and quick way to learn/review vocabulary. Second, I want to practice the MVC architecture and parcel.
 
 ### Notable Features
 
-- Add something
-- Edit something
-- Remove something
-- Allow users to complicate dev's job
+- User input validation
+- MVC architecture
 
 ### Built With
 
@@ -37,20 +35,17 @@ The goal of the project is to learn xyz by building abc.
 
 ### To Do
 
-- [ ] Rewrite the README
-  - [ ] Title
-  - [ ] Live Page Link
-  - [ ] Objective
-  - [ ] Project Statement
-  - [ ] Notable Features
-  - [ ] Built With
-- [ ] Plan
-  - [ ] User stories
-  - [ ] Features
-  - [ ] Flowchart
-  - [ ] Architecture
-  - [ ] UI Design
-  - [ ] Responsive Design
+- [x] Rewrite the README
+  - [x] Title
+  - [x] Live Page Link
+  - [x] Objective
+  - [x] Notable Features
+- [x] Plan
+  - [x] User stories
+  - [x] Features
+  - [x] Flowchart
+  - [x] Architecture
+  - [x] UI Design
 - [ ] Development
   - [ ] Basic HTML
     - [ ] Title
@@ -81,25 +76,56 @@ The goal of the project is to learn xyz by building abc.
 
 ### User Stories
 
-- As a user, I want...
+- As a user, I want to input vocabulary easily
+- As a user, I want to add pairs that are either identical or equivalent
+- As a user, I want to start a new game with the same set of cards
+- As a user, I want to start a new game with a new set of cards w/o reloading
 
 ### Features
 
-- Users can...
+- Users can input the words once
+- Users can input equivalent but different words for "identical cards" (eg: red & red | red & color of blood)
+- Users can start a new game with the same set of cards used
+- Users can use a brand new game with a new card set without reloading
 
 ### Flowchart
 
-Page Loads ->
+Page Loads -> Nothing
+User clicks "Create Set" -> Form (modal) shows -> user inputs list -> a deck is created -> user clicks on a card -> card flips -> user clicks on another card -> card flips -> app compares -> the game continues until the end
 
 ### Architecture
 
-class App {  
--constructor() {  
---this.init();  
--}  
-}  
--init() {  
---console.log('Hello, World!);  
+model.js
+export const state = {
+-deck: [['red', 'blood'], ['blue', 'sky']],
+-currentCard: 'red',
+}
+
+controller.js
+pageView.addHandlerRender(function)
+inputView.addHandlerRender(function)
+playView.addHandlerRender(function)
+playView.addHandlerPlay(function)
+
+class View {
+-render()
+}
+
+class PageView {
+-\_parentElement;
+}
+
+class PlayView {
+-\_parentElement;
+-play()
+-addHandlerCheck()
+}
+
+class InputView {
+-\_parentElement;
+-validate()
+-toggleModal()
+-\_addHandlerToggleModal()
 }
 
 ## Reflection
