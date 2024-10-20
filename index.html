@@ -42,17 +42,30 @@
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
-            <h1>Concentration: A Game Of Memory</h1>
+            <h1 class="heading-primary">Concentration: A Game Of Memory</h1>
           </div>
         </div>
       </section>
 
       <section class="section-play">
-        <div class="play-area"></div>
+        <div class="play-area">
+          <form class="play-form">
+            <h2 class="form-heading heading-secondary">Input Words</h2>
+            <label for="words-left">
+              <textarea required name="words-left" id="words-left">as</textarea>
+            </label>
+            <button class="btn-copy">Copy &rarr;</button>
+            <label for="words-right">
+              <textarea name="words-right" id="words-right"></textarea>
+            </label>
+            <button class="btn-submit" type="submit">Submit Words</button>
+          </form>
+        </div>
       </section>
 
       <section class="section-rules">
         <div class="rules">
+          <h2 class="rules-heading heading-secondary">Rules of the Game</h2>
           <ol class="ordered-list ol-rules">
             <li>Flip two cards per turn</li>
             <li>Find identical card pairs</li>
@@ -62,6 +75,7 @@
 
       <section class="section-instructions">
         <div class="instructions">
+          <h2 class="instructions-heading heading-secondary">How To Use</h2>
           <ol class="ordered-list ol-instructions">
             <li>Input words in the left field</li>
             <li>Copy them if you want truly identical cards</li>
