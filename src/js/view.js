@@ -29,6 +29,14 @@ class View {
       rightWords.value = leftWords.value;
     });
   };
+
+  renderDeck = function (deck) {
+    console.log(deck);
+    const markup = deck.reduce((accu, curr) => {
+      return accu + `<div>${curr.word}</div>`;
+    }, '');
+    this._playArea.insertAdjacentHTML('afterbegin', markup);
+  };
 }
 
 export default new View();

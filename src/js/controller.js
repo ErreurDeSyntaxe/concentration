@@ -11,6 +11,7 @@ import view from './view.js'; // import the outer workings
 const getInputVocab = function ([[_a, leftWords], [_b, rightWords]]) {
   if (rightWords === '') rightWords = leftWords;
   model.loadDeck(leftWords, rightWords);
+  view.renderDeck(model.state.deck);
 };
 
 /**
