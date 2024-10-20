@@ -1,5 +1,18 @@
 export const state = {
-  deck: {},
+  deck: [],
+};
+
+/**
+ *
+ * @param {string} word The word to be displayed on the card
+ * @param {string} equivalent The matching word (as they might not be identical)
+ * @returns {Object} with the word and its equivalent
+ */
+const createCardObject = function (word, equivalent) {
+  return {
+    word,
+    equivalent,
+  };
 };
 
 /**
@@ -10,7 +23,11 @@ export const state = {
 export const loadDeck = function (left, right) {
   const leftArr = left.split('\n');
   const rightArr = right.split('\n');
-  leftArr.forEach((vocab, index) => {
-    state.deck[vocab] = rightArr[index];
-  });
+
+  leftArr.forEach((word, index) =>
+    state.deck.push(createCardObject(word, rightArr[index]))
+  );
+  rightArr.forEach((word, index) =>
+    state.deck.push(createCardObject(word, leftArr[index]))
+  );
 };
