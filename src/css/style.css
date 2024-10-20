@@ -34,7 +34,6 @@ shades:
   font-family: 'Roboto';
   src: url('./font/Roboto-Regular.ttf');
 }
-
 *,
 *::before,
 *::after {
@@ -42,15 +41,34 @@ shades:
   margin: 0;
   padding: 0;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
   padding: 2rem;
+}
+
+/* PLAY SECTION STYLING */
+.section-play {
+  height: 80vh;
+  background-color: #bbb;
+}
+.play-area {
+  background-color: #ddd;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.play-form {
+  height: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+.hidden {
+  display: none;
 }
