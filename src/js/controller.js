@@ -16,6 +16,7 @@ const getInputVocab = function ([[_a, leftWords], [_b, rightWords]]) {
  * Add handlers to the View part of MVC
  */
 const init = function () {
-  view.addHandlerPrint(getInputVocab);
+  view.addHandlerInput(getInputVocab);
+  view.addHandlerCopy('Not really a handler');
 };
 init();
