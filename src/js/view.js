@@ -1,5 +1,6 @@
 class View {
-  _parentElement = document.querySelector('.play-form');
+  _playArea = document.querySelector('.play-area');
+  _playForm = document.querySelector('.play-form');
   _btnCopy = document.querySelector('.btn-copy');
 
   /**
@@ -7,9 +8,10 @@ class View {
    * @param {function} handler Retrieves the user's input
    */
   addHandlerInput = function (handler) {
-    this._parentElement.addEventListener('submit', function (e) {
+    this._playForm.addEventListener('submit', function (e) {
       e.preventDefault();
       handler([...new FormData(this)]);
+      this.classList.add('hidden');
     });
   };
 
