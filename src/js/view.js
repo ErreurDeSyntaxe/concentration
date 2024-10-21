@@ -6,6 +6,7 @@ class View {
   /**
    * Pass the user's input vocabulary to the controller
    * @param {function} handler Retrieves the user's input
+   * @returns {undefined}
    */
   addHandlerInput = function (handler) {
     this._playForm.addEventListener('submit', function (e) {
@@ -20,6 +21,7 @@ class View {
    * This function is purely for user friendliness, as the application will
    * work the same way if the right textarea is empty or if it contains the
    * same vocabulary words.
+   * @returns {undefined}
    */
   addHandlerCopy = function () {
     this._btnCopy.addEventListener('click', function (e) {
@@ -30,12 +32,31 @@ class View {
     });
   };
 
+  /**
+   * Render the vocabulary in the form of 'cards' to be flipped by clicking
+   * Add event handler to enable play
+   * @param {Array} deck The model.state.deck array containing the vocabulary
+   * @returns {undefined}
+   */
   renderDeck = function (deck) {
     console.log(deck);
     const markup = deck.reduce((accu, curr) => {
-      return accu + `<div>${curr.word}</div>`;
+      return (
+        accu +
+        `<div class="face-down card" data-word="${curr.word}" data-eq="${curr.equivalent}"></div>`
+      );
     }, '');
     this._playArea.insertAdjacentHTML('afterbegin', markup);
+
+    // Event delegation
+    this._playArea.addEventListener('click', (e) => {
+      e.target.classList.toggle('face-up');
+      if (e.target.textContent === e.target.dataset.word) {
+        e.target.textContent = '';
+        return;
+      }
+      e.target.textContent = e.target.dataset.word;
+    });
   };
 }
 
