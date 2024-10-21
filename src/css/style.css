@@ -81,3 +81,23 @@ body {
 .hidden {
   display: none;
 }
+.card {
+  /* font-size: 3rem; */
+  color: transparent;
+  border-radius: 9px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face-down {
+  background-color: plum;
+}
+.face-up {
+  background-color: yellow;
+  color: #000;
+}
+.paired {
+  background-color: green;
+  color: #000;
+}
