@@ -63,11 +63,20 @@ body {
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
 }
 .play-form {
   height: 100%;
   grid-column: 1/-1;
   grid-row: 1/-1;
+}
+.textarea {
+  height: 80%;
+  width: 40%;
+}
+.btn-copy {
+}
+.btn-submit {
 }
 .hidden {
   display: none;
