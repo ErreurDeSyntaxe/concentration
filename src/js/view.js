@@ -41,21 +41,27 @@ class View {
   renderDeck = function (deck) {
     console.log(deck);
     const markup = deck.reduce((accu, curr) => {
+      // return (
+      //   accu +
+      //   `<div class="face-down card" data-word="${curr.word}" data-eq="${curr.equivalent}"></div>`
+      // );
       return (
         accu +
-        `<div class="face-down card" data-word="${curr.word}" data-eq="${curr.equivalent}"></div>`
+        `
+        <div class="card-div">
+          <div class="card-face">${curr.word}</div>
+          <div class="card-back">What's Here?</div>
+        </div>`
       );
     }, '');
     this._playArea.insertAdjacentHTML('afterbegin', markup);
 
-    // Event delegation
+    // Event delegation: 'flipping' a card
     this._playArea.addEventListener('click', (e) => {
-      e.target.classList.toggle('face-up');
-      if (e.target.textContent === e.target.dataset.word) {
-        e.target.textContent = '';
-        return;
-      }
-      e.target.textContent = e.target.dataset.word;
+      e.target
+        .closest('.card-div')
+        .querySelector('.card-face')
+        .classList.toggle('flipped');
     });
   };
 }
