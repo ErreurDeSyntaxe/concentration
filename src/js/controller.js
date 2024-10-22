@@ -55,16 +55,6 @@ const flipCard = function (cardDiv) {
       // empty the 'flipped' card array to begin a new turn
       model.state.selected = [];
     }, DELAY_SEC * 1000);
-  // model.state.selected.forEach((poorMatch) => {
-  //   setTimeout(() => {
-  //     poorMatch.querySelector('.card-face').classList.remove('flipped'),
-  //       DELAY_SEC * 1000;
-  //     model.state.locked = false; // resume play
-  //   });
-  // });
-
-  // // empty the 'flipped' card array to begin a new turn
-  // model.state.selected = [];
 };
 
 /**
