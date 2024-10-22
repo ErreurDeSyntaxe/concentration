@@ -15,10 +15,44 @@ const getInputVocab = function ([[_a, leftWords], [_b, rightWords]]) {
 };
 
 /**
+ * Receive and ompare the two 'flipped' cards
+ * @param {HTML element} cardDiv div holding the card-face and card-back divs
+ * @returns {undefined}
+ */
+const flipCard = function (cardDiv) {
+  // keep track of 'flipped' cards
+  model.state.selected.push(cardDiv);
+  if (model.state.selected.length < 2) return;
+
+  // find the card {} in the deck
+  const cardOne = model.state.deck.find(
+    (card) => card.word === model.state.selected[0].children?.[0].textContent
+  );
+  const cardTwo = model.state.deck.find(
+    (card) => card.word === model.state.selected[1].children?.[0].textContent
+  );
+
+  // compare the two selected cards
+  if (cardOne.equivalent === cardTwo.word) {
+    model.state.selected.forEach((div) => div.classList.add('paired'));
+    model.state.paired.push(cardOne, cardTwo);
+  } else
+    model.state.selected.forEach((poorMatch) =>
+      setTimeout(() => {
+        poorMatch.querySelector('.card-face').classList.remove('flipped');
+      }, 1000)
+    );
+
+  // empty the 'flipped' card array to begin a new turn
+  model.state.selected = [];
+};
+
+/**
  * Add handlers to the View part of MVC
  */
 const init = function () {
   view.addHandlerInput(getInputVocab);
   view.addHandlerCopy('Not really a handler');
+  view.addHandlerFlip(flipCard);
 };
 init();

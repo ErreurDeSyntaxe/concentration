@@ -1,5 +1,7 @@
 export const state = {
-  deck: [],
+  deck: [], // all the cards
+  selected: [], // up to two cards selected during a round
+  paired: [], // matching cards found by the player
 };
 
 /**
