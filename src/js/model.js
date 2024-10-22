@@ -2,6 +2,7 @@ export const state = {
   deck: [], // all the cards
   selected: [], // up to two cards selected during a round
   paired: [], // matching cards found by the player
+  locked: false, // lock play to give the player time to read the 2nd card
 };
 
 /**

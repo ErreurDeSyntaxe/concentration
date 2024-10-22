@@ -40,10 +40,12 @@ class View {
     // Event delegation: 'flipping' a card
     this._playArea.addEventListener('click', (e) => {
       const card = e.target.closest('.card-div');
-      if (!card) return;
-      if (card.classList.contains('paired')) return;
+      if (!card) return; // if the click was not on a card
+      if (card.classList.contains('paired')) return; // if the card was matched
+      if (card.querySelector('.card-face').classList.contains('flipped'))
+        return; // if the card was already selected
 
-      card.querySelector('.card-face').classList.toggle('flipped');
+      // card.querySelector('.card-face').classList.toggle('flipped');
       handler(card);
     });
   };
