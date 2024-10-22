@@ -109,3 +109,6 @@ body {
 .flipped {
   z-index: 3;
 }
+.paired > div {
+  background-color: gray;
+}

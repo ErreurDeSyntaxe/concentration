@@ -41,6 +41,7 @@ class View {
     this._playArea.addEventListener('click', (e) => {
       const card = e.target.closest('.card-div');
       if (!card) return;
+      if (card.classList.contains('paired')) return;
 
       card.querySelector('.card-face').classList.toggle('flipped');
       handler(card);
