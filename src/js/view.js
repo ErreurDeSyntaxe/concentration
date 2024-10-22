@@ -45,7 +45,6 @@ class View {
       if (card.querySelector('.card-face').classList.contains('flipped'))
         return; // if the card was already selected
 
-      // card.querySelector('.card-face').classList.toggle('flipped');
       handler(card);
     });
   };
@@ -59,10 +58,6 @@ class View {
   renderDeck = function (deck) {
     console.log(deck);
     const markup = deck.reduce((accu, curr) => {
-      // return (
-      //   accu +
-      //   `<div class="face-down card" data-word="${curr.word}" data-eq="${curr.equivalent}"></div>`
-      // );
       return (
         accu +
         `
