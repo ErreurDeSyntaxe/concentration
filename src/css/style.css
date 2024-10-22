@@ -81,23 +81,31 @@ body {
 .hidden {
   display: none;
 }
-.card {
-  /* font-size: 3rem; */
-  color: transparent;
+.card-div {
   border-radius: 9px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.card-face,
+.card-back {
+  border-radius: 9px;
+
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.face-down {
-  background-color: plum;
-}
-.face-up {
-  background-color: yellow;
+.card-face {
   color: #000;
+  background-color: lightcoral;
 }
-.paired {
-  background-color: green;
-  color: #000;
+.card-back {
+  z-index: 2;
+  background-color: lightblue;
+}
+.flipped {
+  z-index: 3;
 }
