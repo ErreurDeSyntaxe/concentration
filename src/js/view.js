@@ -33,6 +33,21 @@ class View {
   };
 
   /**
+   * Flip the card and send it to the controller
+   * @param {function} handler
+   */
+  addHandlerFlip = function (handler) {
+    // Event delegation: 'flipping' a card
+    this._playArea.addEventListener('click', (e) => {
+      const card = e.target.closest('.card-div');
+      if (!card) return;
+
+      card.querySelector('.card-face').classList.toggle('flipped');
+      handler(card);
+    });
+  };
+
+  /**
    * Render the vocabulary in the form of 'cards' to be flipped by clicking
    * Add event handler to enable play
    * @param {Array} deck The model.state.deck array containing the vocabulary
@@ -55,14 +70,6 @@ class View {
       );
     }, '');
     this._playArea.insertAdjacentHTML('afterbegin', markup);
-
-    // Event delegation: 'flipping' a card
-    this._playArea.addEventListener('click', (e) => {
-      e.target
-        .closest('.card-div')
-        .querySelector('.card-face')
-        .classList.toggle('flipped');
-    });
   };
 }
 
