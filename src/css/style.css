@@ -58,12 +58,13 @@ body {
   font-weight: 400;
   color: #555;
   padding: 2rem;
-  background-color: var(--color-accent-1);
+  background-color: var(--color-gray);
+  /* background-color: var(--color-accent-1); */
 }
 :root {
   --color-main: #415f77;
   --color-accent-1: #d1e9ea;
-  --color-accent-2: #555;
+  --color-accent-2: #fc5050;
   --color-gray: #ffd00c;
   --color-true-gray: #555;
 }
@@ -89,6 +90,8 @@ body {
 }
 .main-nav-list {
   list-style: none;
+  font-size: 3rem;
+  font-weight: 700;
 
   display: flex;
   gap: 1.6rem;
@@ -103,8 +106,8 @@ body {
 }
 .nav-list-link:hover,
 .nav-list-link:active {
-  border-bottom: 2px solid var(--color-accent-2);
   color: var(--color-accent-2);
+  border-bottom: 2px solid currentColor;
 }
 
 /* PLAY SECTION STYLING */
