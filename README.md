@@ -64,11 +64,19 @@ The project has two main goals of equal importance. First, I want to provide a f
   - [x] Console-Based Logic
     - [x] Forget to Plan this Part
   - [ ] UI
-    - [ ] Refined UI
+    - [x] Refined UI
     - [x] Color Palette
     - [ ] Overall Layout
+      - [ ] Headings
     - [ ] Individual Section Layout
-    - [ ] Menu/Nav
+      - [ ] Header/Nav
+      - [ ] Play Area
+        - [ ] Cards
+        - [ ] Buttons
+        - [ ] Text Area
+      - [ ] Rules
+      - [ ] How To
+      - [ ] Footer
   - [ ] Responsive Design
     - [ ] Media Queries
     - [ ] Mobile Menu
