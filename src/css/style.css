@@ -84,6 +84,7 @@ body {
   padding: 0 2.4rem;
 }
 .ordered-list {
+  line-height: 1.2;
 }
 
 /* HEADER/NAV STYLING */
