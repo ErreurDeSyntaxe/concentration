@@ -69,11 +69,11 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [x] Overall Layout
       - [x] Headings
     - [ ] Individual Section Layout
-      - [ ] Header/Nav
+      - [x] Header/Nav
       - [ ] Play Area
         - [ ] Cards
-        - [ ] Buttons
-        - [ ] Text Area
+        - [x] Buttons
+        - [x] Textarea
       - [ ] Rules
       - [ ] How To
       - [ ] Footer
@@ -82,7 +82,7 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [ ] Mobile Menu
   - [ ] Check Accessibility
 - [ ] Fix bugs
-  - [ ] No Bugs Yet!
+  - [ ] A card is created for an empty line in textarea (hitting enter after last word)
 - [ ] Review README
 
 ### User Stories
