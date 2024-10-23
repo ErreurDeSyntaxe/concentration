@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header section">
       <a href="#"
         ><img
           src="./src/img/favicon.svg"
@@ -39,7 +39,7 @@
     </header>
 
     <main>
-      <section class="section-hero" id="section-hero">
+      <section class="section-hero section" id="section-hero">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">Concentration: A Game Of Memory</h1>
@@ -47,38 +47,31 @@
         </div>
       </section>
 
-      <section class="section-play" id="section-play">
-        <div class="play-area">
-          <form class="play-form">
-            <h2 class="form-heading heading-secondary">Input Words</h2>
-            <label for="words-left">
-              <textarea
-                required
-                name="words-left"
-                id="words-left"
-                class="textarea"
-              >
-a
-b
-c
-d
-e</textarea
-              >
-            </label>
-            <button class="btn-copy">Copy &rarr;</button>
-            <label for="words-right">
-              <textarea
-                name="words-right"
-                id="words-right"
-                class="textarea"
-              ></textarea>
-            </label>
-            <button class="btn-submit" type="submit">Submit Words</button>
-          </form>
-        </div>
+      <section class="section-play section" id="section-play">
+        <h2 class="form-heading heading-secondary">Input Words</h2>
+        <div class="play-area"></div>
+        <form class="play-form">
+          <label for="words-left">
+            <textarea
+              required
+              name="words-left"
+              id="words-left"
+              class="textarea"
+            ></textarea>
+          </label>
+          <button class="btn-copy">Copy &rarr;</button>
+          <label for="words-right">
+            <textarea
+              name="words-right"
+              id="words-right"
+              class="textarea"
+            ></textarea>
+          </label>
+          <button class="btn-submit" type="submit">Submit Words</button>
+        </form>
       </section>
 
-      <section class="section-rules" id="section-rules">
+      <section class="section-rules section" id="section-rules">
         <div class="rules">
           <h2 class="rules-heading heading-secondary">Rules of the Game</h2>
           <ol class="ordered-list ol-rules">
@@ -88,7 +81,7 @@ e</textarea
         </div>
       </section>
 
-      <section class="section-instructions" id="section-instructions">
+      <section class="section-instructions section" id="section-instructions">
         <div class="instructions">
           <h2 class="instructions-heading heading-secondary">How To Use</h2>
           <ol class="ordered-list ol-instructions">
@@ -100,7 +93,7 @@ e</textarea
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section">
       This project was made by
       <a
         href="https://github.com/ErreurDeSyntaxe"
