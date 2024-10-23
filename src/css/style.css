@@ -110,6 +110,17 @@ body {
   border-bottom: 2px solid currentColor;
 }
 
+/* HERO SECTION STYLING */
+.section-hero {
+  padding: 2.4rem 0;
+}
+.hero {
+}
+.hero-text-box {
+  text-align: center;
+  line-height: 1.1;
+}
+
 /* PLAY SECTION STYLING */
 .section-play {
   height: 80vh;
