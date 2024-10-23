@@ -63,14 +63,25 @@ class View {
   };
 
   /**
+   * Shuffle deck of cards
+   * @param {Array} deck Card objects
+   * @returns {Array} Shuffled deck
+   */
+  _randomize(deck) {
+    const tempDeck = [...deck];
+    return deck.map(() => {
+      const randomIndex = Math.floor(Math.random() * tempDeck.length);
+      return tempDeck.splice(randomIndex, 1)[0];
+    });
+  }
+
+  /**
    * Render the vocabulary in the form of 'cards' to be flipped by clicking
-   * Add event handler to enable play
    * @param {Array} deck The model.state.deck array containing the vocabulary
    * @returns {undefined}
    */
   renderDeck = function (deck) {
-    console.log(deck);
-    const markup = deck.reduce((accu, curr) => {
+    const markup = this._randomize(deck).reduce((accu, curr) => {
       return (
         accu +
         `
