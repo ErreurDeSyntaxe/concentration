@@ -58,9 +58,11 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  padding: 2rem 0;
+  padding-top: 2rem;
   background-color: var(--color-gray);
-  /* background-color: var(--color-accent-1); */
+
+  display: flex;
+  flex-direction: column;
 }
 :root {
   --color-main: #415f77;
@@ -247,6 +249,8 @@ body {
 .rules-heading {
 }
 .ol-rules {
+  padding-left: 3.2rem;
+  font-size: 3.2rem;
 }
 
 /* INSTRUCTIONS SECTION STYLING */
@@ -257,10 +261,27 @@ body {
 .instructions-heading {
 }
 .ol-instructions {
+  padding-left: 3.2rem;
+  font-size: 3.2rem;
 }
 
 /* FOOTER STYLING */
 .footer {
+  padding-top: 4.8rem;
+  padding-bottom: 1.2em;
+  text-align: center;
+  font-size: 2rem;
 }
-.footer-link {
+.footer-link:link,
+.footer-link:visited {
+  color: var(--color-main);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  transition: all 300ms;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: var(--color-accent-2);
+  border-bottom: 2px solid currentColor;
 }
