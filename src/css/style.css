@@ -13,19 +13,19 @@ Main: #415F77
 tints:
 shades:
 
-Grey: #FFD00C
-tints:
-shades:
-
-True Grey: #555
-tints:
-shades:
-
 Accent 1: #D1E9EA
 tints:
 shades:
 
 Accent 2: #FC5050
+tints:
+shades:
+
+Grey: #FFD00C
+tints:
+shades:
+
+True Grey: #555
 tints:
 shades:
 */
@@ -58,6 +58,53 @@ body {
   font-weight: 400;
   color: #555;
   padding: 2rem;
+  background-color: var(--color-accent-1);
+}
+:root {
+  --color-main: #415f77;
+  --color-accent-1: #d1e9ea;
+  --color-accent-2: #555;
+  --color-gray: #ffd00c;
+  --color-true-gray: #555;
+}
+
+/* HEADING STYLING */
+.heading-primary {
+  font-size: 6.2rem;
+}
+.heading-secondary {
+  font-size: 5.2rem;
+}
+
+/* HEADER/NAV STYLING */
+.header {
+  font-size: 2.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  height: 4.8rem;
+}
+.main-nav-list {
+  list-style: none;
+
+  display: flex;
+  gap: 1.6rem;
+}
+.nav-list-link:link,
+.nav-list-link:visited {
+  text-decoration: none;
+  color: var(--color-main);
+  border-bottom: 2px solid transparent;
+
+  transition: all 300ms;
+}
+.nav-list-link:hover,
+.nav-list-link:active {
+  border-bottom: 2px solid var(--color-accent-2);
+  color: var(--color-accent-2);
 }
 
 /* PLAY SECTION STYLING */
