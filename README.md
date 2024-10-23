@@ -66,8 +66,8 @@ The project has two main goals of equal importance. First, I want to provide a f
   - [ ] UI
     - [x] Refined UI
     - [x] Color Palette
-    - [ ] Overall Layout
-      - [ ] Headings
+    - [x] Overall Layout
+      - [x] Headings
     - [ ] Individual Section Layout
       - [ ] Header/Nav
       - [ ] Play Area
@@ -120,23 +120,6 @@ playView.addHandlerPlay(function)
 
 class View {
 -render()
-}
-
-class PageView {
--\_parentElement;
-}
-
-class PlayView {
--\_parentElement;
--play()
--addHandlerCheck()
-}
-
-class InputView {
--\_parentElement;
--validate()
--toggleModal()
--\_addHandlerToggleModal()
 }
 
 ## Reflection
