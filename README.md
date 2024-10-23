@@ -61,7 +61,8 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [ ] "npm i parcel -D"
     - [ ] Run Local Host With CLI: "npm start"
     - [ ] Build Deployment-Ready Files With CLI: "npm run build"
-  - [ ] Console-Based Logic
+  - [x] Console-Based Logic
+    - [x] Forget to Plan this Part
   - [ ] UI
     - [ ] Refined UI
     - [ ] Color Palette
