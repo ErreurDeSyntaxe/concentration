@@ -15,7 +15,7 @@ shades:
 
 Accent 1: #D1E9EA
 tints:
-shades:
+shades: #7d8c8c
 
 Accent 2: #FC5050
 tints:
@@ -133,13 +133,6 @@ body {
   background-color: var(--color-main);
   padding-bottom: 2.4rem;
 }
-.play-area {
-  height: 100%;
-
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
-}
 .play-form {
   height: 100%;
   grid-column: 1/-1;
@@ -171,7 +164,7 @@ body {
   background-color: var(--color-gray);
 }
 .textarea {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   padding: 2rem;
   font-size: 3rem;
@@ -191,11 +184,27 @@ body {
 .hidden {
   display: none;
 }
+.play-container {
+  display: flex;
+  justify-content: center;
+}
+.play-area {
+  height: 100%;
+  width: 84rem;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
 .card-div {
+  height: 16rem;
+  width: 16rem;
   border-radius: 9px;
 
   display: grid;
   grid-template-columns: 1fr;
+
+  cursor: pointer;
 }
 .card-face,
 .card-back {
@@ -211,18 +220,22 @@ body {
   transition: all 300ms;
 }
 .card-face {
-  color: #000;
-  background-color: lightcoral;
+  font-size: 2.6rem;
+  color: var(--color-main);
+  background-color: var(--color-gray);
 }
 .card-back {
+  background-color: #7d8c8c;
   z-index: 2;
-  background-color: lightblue;
+  & svg {
+    width: 6rem;
+  }
 }
 .flipped {
   z-index: 3;
 }
 .paired > div {
-  background-color: gray;
+  background-color: #333;
 }
 
 /* RULES SECTION STYLING */
