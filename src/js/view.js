@@ -11,7 +11,20 @@ class View {
   addHandlerInput = function (handler) {
     this._playForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      handler([...new FormData(this)]);
+
+      // extract the information from the form & make arrays
+      const [[, left], [, right]] = [...new FormData(this)];
+      const leftArr = left.split('\n');
+      const rightArr = right.split('\n');
+
+      // validate form input
+      if (leftArr.length !== rightArr.length && rightArr[0] !== '') {
+        alert('You must provide an equal number of items on each side');
+        return;
+      }
+
+      // send the input to the controller
+      handler(leftArr, rightArr);
       this.classList.add('hidden');
     });
   };
