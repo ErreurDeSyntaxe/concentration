@@ -65,7 +65,7 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [x] Forget to Plan this Part
   - [ ] UI
     - [ ] Refined UI
-    - [ ] Color Palette
+    - [x] Color Palette
     - [ ] Overall Layout
     - [ ] Individual Section Layout
     - [ ] Menu/Nav
