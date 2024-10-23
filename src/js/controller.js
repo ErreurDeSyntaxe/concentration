@@ -4,14 +4,13 @@ import { DELAY_SEC } from './config.js';
 
 /**
  * Get the user's input (works if only one textarea is filled)
- * @param {array} _a Throwaway variable (name of the textarea)
- * @param {array} leftWords Textarea content (value)
- * @param {array} _b Throwaway variable (name of the textarea)
- * @param {array} rightWords Textarea content (value)
+ * @param {Array} left Textarea content (value)
+ * @param {Array} right Textarea content (value)
  */
-const getInputVocab = function ([[_a, leftWords], [_b, rightWords]]) {
-  if (rightWords === '') rightWords = leftWords;
-  model.loadDeck(leftWords, rightWords);
+const getInputVocab = function (left, right) {
+  // allow user to input identical words only once
+  if (right[0] === '') right = [...left];
+  model.loadDeck(left, right);
   view.renderDeck(model.state.deck);
 };
 

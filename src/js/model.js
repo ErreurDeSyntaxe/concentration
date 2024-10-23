@@ -20,17 +20,14 @@ const createCardObject = function (word, equivalent) {
 
 /**
  * Create deck of identical/equivalent cards to play the game
- * @param {String} left String obtained from the form
- * @param {String} right String obtained from the form
+ * @param {Array} left Array obtained from the form
+ * @param {Array} right Array obtained from the form
  */
 export const loadDeck = function (left, right) {
-  const leftArr = left.split('\n');
-  const rightArr = right.split('\n');
-
-  leftArr.forEach((word, index) =>
-    state.deck.push(createCardObject(word, rightArr[index]))
+  left.forEach((word, index) =>
+    state.deck.push(createCardObject(word, right[index]))
   );
-  rightArr.forEach((word, index) =>
-    state.deck.push(createCardObject(word, leftArr[index]))
+  right.forEach((word, index) =>
+    state.deck.push(createCardObject(word, left[index]))
   );
 };
