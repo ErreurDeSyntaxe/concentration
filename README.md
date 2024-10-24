@@ -63,8 +63,8 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [ ] Build Deployment-Ready Files With CLI: "npm run build"
   - [x] Console-Based Logic
     - [x] Forget to Plan this Part
-    - [ ] Reshuffle Deck (Play Again)
-    - [ ] New Game (New Deck)
+    - [x] Reshuffle Deck (Play Again)
+    - [x] New Game (New Deck)
   - [x] UI
     - [x] Refined UI
     - [x] Color Palette
@@ -84,7 +84,7 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [ ] Mobile Menu
   - [ ] Check Accessibility
 - [ ] Fix bugs
-  - [ ] A card is created for an empty line in textarea (hitting enter after last word)
+  - [x] A card is created for an empty line in textarea (hitting enter after last word)
 - [ ] Review README
 
 ### User Stories
