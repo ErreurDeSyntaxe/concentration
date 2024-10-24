@@ -52,19 +52,12 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [x] Meta
     - [x] Rough Structure
     - [x] Favicons
-  - [ ] Parcel
-    - [ ] "npm init"
-    - [ ] Remove "main": "index.js"
-    - [ ] Later Replace With "default": "index.html"
-    - [ ] Rewrite "test" to "start": "parcel index.html"
-    - [ ] Add "build": "parcel build index.html --dist-dir ./dist"
-    - [ ] "npm i parcel -D"
-    - [ ] Run Local Host With CLI: "npm start"
-    - [ ] Build Deployment-Ready Files With CLI: "npm run build"
   - [x] Console-Based Logic
     - [x] Forget to Plan this Part
     - [x] Reshuffle Deck (Play Again)
     - [x] New Game (New Deck)
+  - [x] Fix bugs
+    - [x] A card is created for an empty line in textarea (hitting enter after last word)
   - [x] UI
     - [x] Refined UI
     - [x] Color Palette
@@ -82,8 +75,6 @@ The project has two main goals of equal importance. First, I want to provide a f
   - [x] Responsive Design
     - [x] Media Queries
   - [ ] Check Accessibility
-- [ ] Fix bugs
-  - [x] A card is created for an empty line in textarea (hitting enter after last word)
 - [ ] Review README
 
 ### User Stories
