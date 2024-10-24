@@ -61,6 +61,10 @@ const reshuffle = function () {
   view.renderDeck(model.state.deck);
 };
 
+const changeWords = function () {
+  model.state.deck = [];
+};
+
 /**
  * Add handlers to the View part of MVC
  */
@@ -68,6 +72,6 @@ const init = function () {
   view.addHandlerInput(getInputVocab);
   view.addHandlerCopy('Not really a handler');
   view.addHandlerFlip(flipCard);
-  view.addHandlerReshuffle(reshuffle);
+  view.addHandlerReshuffleChange(reshuffle, changeWords);
 };
 init();

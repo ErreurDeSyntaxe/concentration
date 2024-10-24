@@ -27,7 +27,7 @@ class View {
 
       // send the input to the controller
       handler(leftArr, rightArr);
-      this.classList.add('hidden');
+      this.classList.toggle('hidden');
     });
   };
 
@@ -64,12 +64,19 @@ class View {
     });
   };
 
-  addHandlerReshuffle(handler) {
+  addHandlerReshuffleChange(handlerShuffle, handlerChange) {
     this._containerBtn.addEventListener('click', (e) => {
       const btn = e.target;
       if (!btn.classList.contains('btn-function')) return;
-      console.log(e.target);
-      if (btn.classList.contains('btn-reshuffle')) handler();
+
+      if (btn.classList.contains('btn-reshuffle')) handlerShuffle();
+
+      if (btn.classList.contains('btn-change')) {
+        this._playForm.classList.toggle('hidden');
+        this._playArea.classList.toggle('hidden');
+        this.toggleDisplay(); // heading content & buttons
+        handlerChange();
+      }
     });
   }
 
@@ -122,6 +129,7 @@ class View {
       );
     }, '');
     this._playArea.insertAdjacentHTML('afterbegin', markup);
+    this._playArea.classList.remove('hidden');
   };
 }
 
