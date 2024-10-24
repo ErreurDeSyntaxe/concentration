@@ -85,6 +85,8 @@ body {
   padding: 0 2.4rem;
 }
 .ordered-list {
+  padding-left: 3.2rem;
+  font-size: 3.2rem;
   letter-spacing: 2px;
   line-height: 1.2;
 }
@@ -201,6 +203,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+  justify-items: center;
 }
 .card-div {
   height: 16rem;
@@ -273,29 +276,10 @@ body {
 }
 
 /* RULES SECTION STYLING */
-
-.section-rules {
-}
-.rules {
-}
-.rules-heading {
-}
-.ol-rules {
-  padding-left: 3.2rem;
-  font-size: 3.2rem;
-}
+/* none yet: check general styling */
 
 /* INSTRUCTIONS SECTION STYLING */
-.section-instructions {
-}
-.instructions {
-}
-.instructions-heading {
-}
-.ol-instructions {
-  padding-left: 3.2rem;
-  font-size: 3.2rem;
-}
+/* none yet: check general styling */
 
 /* FOOTER STYLING */
 .footer {
