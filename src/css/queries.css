@@ -1,8 +1,155 @@
 /* In media queries, 1rem = 1em = 16px */
 
-/**************************/
-/* BELOW 1344px */
-/**************************/
+/* BELOW 1120px */
+@media (max-width: 70em) {
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+  .heading-secondary {
+    font-size: 4.4rem;
+  }
+}
 
-@media (max-width: 84em) {
+/* BELOW 1008px */
+@media (max-width: 63em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .play-area {
+    width: 60rem;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .play-btn-container {
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1rem;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ordered-list {
+    font-size: 2.4rem;
+  }
+}
+
+/* BELOW 880px */
+@media (max-width: 55em) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+
+  .textarea {
+    font-size: 2.4rem;
+  }
+  .btn-copy,
+  .btn-submit {
+    font-size: 2.4rem;
+  }
+  .btn-change,
+  .btn-reshuffle {
+    font-size: 2.4rem;
+  }
+
+  .ordered-list {
+    font-size: 2rem;
+  }
+
+  .footer {
+    font-size: 1.6rem;
+  }
+}
+
+/* BELOW 848PX */
+@media (max-width: 53em) {
+  .heading-primary {
+    font-size: 3rem;
+  }
+  .heading-secondary {
+    font-size: 2rem;
+  }
+
+  .card-div {
+    height: 12rem;
+    width: 12rem;
+  }
+  .card-face {
+    font-size: 2rem;
+  }
+  .card-back {
+    & svg {
+      width: 4rem;
+    }
+  }
+}
+
+/* BELOW 608px */
+@media (max-width: 38em) {
+  .textarea {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .btn-change,
+  .btn-reshuffle {
+    font-size: 1.8rem;
+  }
+}
+
+/* BELOW 480PX */
+@media (max-width: 30em) {
+  .main-nav-list {
+    font-size: 1.8rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
+
+  .textarea {
+    font-size: 1.6rem;
+  }
+  .card-div {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 9px;
+  }
+  .card-face {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+  }
+  .card-back {
+    & svg {
+      width: 3rem;
+    }
+  }
+  .btn-copy,
+  .btn-submit {
+    font-size: 1.4rem;
+  }
+  .btn-change,
+  .btn-reshuffle {
+    font-size: 1.4rem;
+  }
+
+  .ordered-list {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+  }
 }
