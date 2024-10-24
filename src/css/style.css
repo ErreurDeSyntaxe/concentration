@@ -238,14 +238,14 @@ body {
   background-color: #7d8c8c;
   z-index: 2;
   & svg {
-    width: 6rem;
+    width: 12rem;
   }
 }
 .flipped {
   z-index: 3;
 }
 .paired > div {
-  background-color: #333;
+  background-color: #111;
 }
 .play-btn-container {
   padding: 3.2rem;
@@ -261,7 +261,7 @@ body {
   letter-spacing: 2px;
   font-size: 2.4rem;
   font-weight: 700;
-  color: #333;
+  color: #222;
   padding: 2rem 0;
   width: 100%;
 
