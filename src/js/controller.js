@@ -12,6 +12,7 @@ const getInputVocab = function (left, right) {
   if (right[0] === '') right = [...left];
   model.loadDeck(left, right);
   view.renderDeck(model.state.deck);
+  view.toggleDisplay();
 };
 
 /**
@@ -56,6 +57,10 @@ const flipCard = function (cardDiv) {
     }, DELAY_SEC * 1000);
 };
 
+const reshuffle = function () {
+  view.renderDeck(model.state.deck);
+};
+
 /**
  * Add handlers to the View part of MVC
  */
@@ -63,5 +68,6 @@ const init = function () {
   view.addHandlerInput(getInputVocab);
   view.addHandlerCopy('Not really a handler');
   view.addHandlerFlip(flipCard);
+  view.addHandlerReshuffle(reshuffle);
 };
 init();

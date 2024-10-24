@@ -64,9 +64,12 @@ class View {
     });
   };
 
-  addHandlerReshuffle() {
+  addHandlerReshuffle(handler) {
     this._containerBtn.addEventListener('click', (e) => {
+      const btn = e.target;
+      if (!btn.classList.contains('btn-function')) return;
       console.log(e.target);
+      if (btn.classList.contains('btn-reshuffle')) handler();
     });
   }
 
@@ -94,7 +97,7 @@ class View {
   /**
    * Change heading text content and display/hide buttons used when playing
    */
-  _toggleDisplay() {
+  toggleDisplay() {
     this._playAreaHeading.textContent =
       this._playAreaHeading.textContent === 'Play!' ? 'Input Words' : 'Play!';
 
@@ -119,8 +122,6 @@ class View {
       );
     }, '');
     this._playArea.insertAdjacentHTML('afterbegin', markup);
-
-    this._toggleDisplay();
   };
 }
 
