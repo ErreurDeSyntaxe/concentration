@@ -79,9 +79,8 @@ The project has two main goals of equal importance. First, I want to provide a f
       - [x] Rules
       - [x] How To
       - [x] Footer
-  - [ ] Responsive Design
-    - [ ] Media Queries
-    - [ ] Mobile Menu
+  - [x] Responsive Design
+    - [x] Media Queries
   - [ ] Check Accessibility
 - [ ] Fix bugs
   - [x] A card is created for an empty line in textarea (hitting enter after last word)
