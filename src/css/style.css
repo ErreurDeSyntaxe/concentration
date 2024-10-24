@@ -239,6 +239,7 @@ body {
 }
 .play-btn-container {
   padding: 3.2rem;
+  margin-top: 3.2rem;
 
   display: flex;
   justify-content: center;

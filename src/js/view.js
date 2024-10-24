@@ -2,6 +2,7 @@ class View {
   _playArea = document.querySelector('.play-area');
   _playForm = document.querySelector('.play-form');
   _btnCopy = document.querySelector('.btn-copy');
+  _containerBtn = document.querySelector('.play-btn-container');
 
   /**
    * Pass the user's input vocabulary to the controller
@@ -85,6 +86,7 @@ class View {
    * @returns {undefined}
    */
   renderDeck = function (deck) {
+    this._playArea.textContent = '';
     const markup = this._randomize(deck).reduce((accu, curr) => {
       return (
         accu +
@@ -96,6 +98,9 @@ class View {
       );
     }, '');
     this._playArea.insertAdjacentHTML('afterbegin', markup);
+
+    // display buttons
+    this._containerBtn.classList.toggle('hidden');
   };
 }
 
