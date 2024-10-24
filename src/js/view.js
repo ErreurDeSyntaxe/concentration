@@ -1,5 +1,6 @@
 class View {
   _playArea = document.querySelector('.play-area');
+  _playAreaHeading = document.querySelector('.form-heading');
   _playForm = document.querySelector('.play-form');
   _btnCopy = document.querySelector('.btn-copy');
   _containerBtn = document.querySelector('.play-btn-container');
@@ -63,6 +64,12 @@ class View {
     });
   };
 
+  addHandlerReshuffle() {
+    this._containerBtn.addEventListener('click', (e) => {
+      console.log(e.target);
+    });
+  }
+
   /**
    * Shuffle deck of cards
    * @param {Array} deck Card objects
@@ -76,8 +83,22 @@ class View {
     });
   }
 
+  /**
+   * Help read the code. The function that calls it is now clearer.
+   * @returns {String} svg on the 'back' of the cards
+   */
   _addSVG() {
-    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFD00C"><path d="M360-360v-240h240v240H360Zm80-80h80v-80h-80v80Zm-80 320v-80h-80q-33 0-56.5-23.5T200-280v-80h-80v-80h80v-80h-80v-80h80v-80q0-33 23.5-56.5T280-760h80v-80h80v80h80v-80h80v80h80q33 0 56.5 23.5T760-680v80h80v80h-80v80h80v80h-80v80q0 33-23.5 56.5T680-200h-80v80h-80v-80h-80v80h-80Zm320-160v-400H280v400h400ZM480-480Z"/></svg>`;
+    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFD00C"><path d="M360-360v-240h240v240H360Zm80-80h80v-80h-80v80Zm-80 320v-80h-80q-33 0-56.5-23.5T200-280v-80h-80v-80h80v-80h-80v-80h80v-80q0-33 23.5-56.5T280-760h80v-80h80v80h80v-80h80v80h80q33 0 56.5 23.5T760-680v80h80v80h-80v80h80v80h-80v80q0 33-23.5 56.5T680-200h-80v80h-80v-80h-80v80h-80Zm320-160v-400H280v400h400ZM480-480Z"/></svg>';
+  }
+
+  /**
+   * Change heading text content and display/hide buttons used when playing
+   */
+  _toggleDisplay() {
+    this._playAreaHeading.textContent =
+      this._playAreaHeading.textContent === 'Play!' ? 'Input Words' : 'Play!';
+
+    this._containerBtn.classList.toggle('hidden');
   }
 
   /**
@@ -99,8 +120,7 @@ class View {
     }, '');
     this._playArea.insertAdjacentHTML('afterbegin', markup);
 
-    // display buttons
-    this._containerBtn.classList.toggle('hidden');
+    this._toggleDisplay();
   };
 }
 
