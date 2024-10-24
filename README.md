@@ -46,7 +46,7 @@ The project has two main goals of equal importance. First, I want to provide a f
   - [x] Flowchart
   - [x] Architecture
   - [x] UI Design
-- [ ] Development
+- [x] Development
   - [x] Basic HTML
     - [x] Title
     - [x] Meta
@@ -74,7 +74,7 @@ The project has two main goals of equal importance. First, I want to provide a f
       - [x] Footer
   - [x] Responsive Design
     - [x] Media Queries
-  - [ ] Check Accessibility
+  - [x] Check Accessibility
 - [ ] Review README
 
 ### User Stories
