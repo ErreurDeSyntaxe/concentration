@@ -88,7 +88,7 @@
     width: 18rem;
   }
   .card-face {
-    font-size: 2rem;
+    letter-spacing: 1px;
   }
   .card-back {
     & svg {
@@ -120,6 +120,10 @@
     height: 14rem;
     width: 14rem;
   }
+  .card-face {
+    font-size: 2.6rem;
+    letter-spacing: normal;
+  }
 
   .btn-change,
   .btn-reshuffle {
@@ -150,8 +154,7 @@
     border-radius: 9px;
   }
   .card-face {
-    letter-spacing: 2px;
-    font-size: 1.2rem;
+    font-size: 2.4rem;
   }
   .card-back {
     & svg {

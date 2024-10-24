@@ -229,9 +229,10 @@ body {
   transition: all 300ms;
 }
 .card-face {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: var(--color-main);
   background-color: var(--color-gray);
+  letter-spacing: 2px;
 }
 .card-back {
   background-color: #7d8c8c;
