@@ -65,16 +65,16 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [x] Forget to Plan this Part
     - [ ] Reshuffle Deck (Play Again)
     - [ ] New Game (New Deck)
-  - [ ] UI
+  - [x] UI
     - [x] Refined UI
     - [x] Color Palette
     - [x] Overall Layout
       - [x] Headings
-    - [ ] Individual Section Layout
+    - [x] Individual Section Layout
       - [x] Header/Nav
-      - [ ] Play Area
+      - [x] Play Area
         - [x] Cards
-        - [ ] Buttons
+        - [x] Buttons
         - [x] Textarea
       - [x] Rules
       - [x] How To
