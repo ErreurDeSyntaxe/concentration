@@ -55,6 +55,7 @@ html {
 }
 body {
   font-family: 'SaintGeorge';
+  letter-spacing: 4px;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -84,6 +85,7 @@ body {
   padding: 0 2.4rem;
 }
 .ordered-list {
+  letter-spacing: 2px;
   line-height: 1.2;
 }
 
@@ -152,6 +154,7 @@ body {
 
   font-size: 3rem;
   line-height: 1.15;
+  letter-spacing: 2px;
 }
 .textarea,
 .btn-copy,
@@ -161,6 +164,7 @@ body {
 }
 .btn-copy,
 .btn-submit {
+  letter-spacing: 2px;
   font-size: 2.4rem;
   font-weight: 700;
 
@@ -250,6 +254,7 @@ body {
 .btn-change,
 .btn-reshuffle {
   font-family: 'SaintGeorge';
+  letter-spacing: 2px;
   font-size: 2.4rem;
   font-weight: 700;
   padding: 2rem 0;
