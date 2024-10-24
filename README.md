@@ -73,8 +73,8 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [ ] Individual Section Layout
       - [x] Header/Nav
       - [ ] Play Area
-        - [ ] Cards
-        - [x] Buttons
+        - [x] Cards
+        - [ ] Buttons
         - [x] Textarea
       - [x] Rules
       - [x] How To
