@@ -1,13 +1,13 @@
 # Concentration
 
-A website to play a singleplayer, custom game of concentration. The user inputs a list of words. The application generates the cards, lays them randomly in a grid formation, and allows the user to play according to the rules. Each turn allows the player to flip to cards. If they are identical, the cards remain face up. Otherwise, they are flipped back down.
+A website to play a singleplayer, custom game of concentration. The user inputs a list of words. The application generates the cards, lays them randomly in a grid formation, and allows the user to play according to the rules. Each turn allows the player to flip two cards. If they are identical, the cards remain face up. Otherwise, they are flipped back down.
 
 ## About the Project
 
 ### Preview
 
 <div align='center'>
-    <img src='./README/project-preview.png'>
+    <img src='./README/project-preview.jpg'>
 </div>
 
 ### Live
@@ -16,7 +16,7 @@ A website to play a singleplayer, custom game of concentration. The user inputs 
 
 ### Objective
 
-The project has two main goals of equal importance. First, I want to provide a fun and quick way to learn/review vocabulary. Second, I want to practice the MVC architecture and parcel.
+The project has two main goals of equal importance. First, I want to provide a fun and quick way to learn/review vocabulary. Second, I want to practice the MVC architecture.
 
 ### Notable Features
 
@@ -75,7 +75,7 @@ The project has two main goals of equal importance. First, I want to provide a f
   - [x] Responsive Design
     - [x] Media Queries
   - [x] Check Accessibility
-- [ ] Review README
+- [x] Review README
 
 ### User Stories
 
@@ -118,8 +118,8 @@ class View {
 
 ### Lessons & Difficulties
 
-Some lessons learned along the way
+Implementing the MVC architecture was difficult. Sometimes, I had to focus on something else to allow the back of my mind to work on it. In the end, I am satisfied with the result and my learning process.
 
 ### Diary
 
-Some thoughts regarding the project
+The project was fun, but I avoided parcel because it feels like a hassle more than a tool for now. That might change with larger projects. I'll keep an open mind.
