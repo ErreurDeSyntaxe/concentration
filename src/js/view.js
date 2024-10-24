@@ -64,6 +64,11 @@ class View {
     });
   };
 
+  /**
+   * Control the game flow: start a new game or a new round
+   * @param {function} handlerShuffle Render the same cards in diff position
+   * @param {function} handlerChange Display form to input new words
+   */
   addHandlerReshuffleChange(handlerShuffle, handlerChange) {
     this._containerBtn.addEventListener('click', (e) => {
       const btn = e.target;
