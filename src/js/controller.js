@@ -57,12 +57,20 @@ const flipCard = function (cardDiv) {
     }, DELAY_SEC * 1000);
 };
 
+const resetDeck = function (deck = []) {
+  model.state.deck = deck;
+  model.state.selected = [];
+  model.state.paired = [];
+  model.state.locked = false;
+};
+
 const reshuffle = function () {
   view.renderDeck(model.state.deck);
+  resetDeck(model.state.deck); // 'resets' deck to current deck
 };
 
 const changeWords = function () {
-  model.state.deck = [];
+  resetDeck(); // passing no parameters empties the deck
 };
 
 /**
