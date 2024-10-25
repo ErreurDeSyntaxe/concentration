@@ -124,3 +124,5 @@ Implementing the MVC architecture was difficult. Sometimes, I had to focus on so
 ### Diary
 
 The project was fun, but I avoided parcel because it feels like a hassle more than a tool for now. That might change with larger projects. I'll keep an open mind.
+
+I had the hubris to write 'End project' as a commit. The sting of finding a bug afterwards might teach me a lesson. Maybe the price was not steep enough. Time will tell.
