@@ -42,6 +42,10 @@ shades:
   font-family: 'SaintGeorge';
   src: url('./font/SaintGeorge-LowercaseStencil.ttf');
 }
+@font-face {
+  font-family: 'Amphibia';
+  src: url('./font/Amphibia-Regular.otf');
+}
 *,
 *::before,
 *::after {
@@ -54,7 +58,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'SaintGeorge';
+  font-family: 'Amphibia';
   letter-spacing: 4px;
   line-height: 1;
   font-weight: 400;
@@ -153,12 +157,13 @@ body {
   height: 50vh;
   width: 100%;
   padding: 2rem;
+  border-radius: 9px;
 
+  font-family: 'Amphibia';
   font-size: 3rem;
   line-height: 1.15;
   letter-spacing: 2px;
 }
-.textarea,
 .btn-copy,
 .btn-submit {
   border-radius: 9px;
@@ -218,6 +223,7 @@ body {
 .card-face,
 .card-back {
   border-radius: 9px;
+  max-width: 100%;
 
   grid-column: 1/-1;
   grid-row: 1/-1;
@@ -229,7 +235,9 @@ body {
   transition: all 300ms;
 }
 .card-face {
+  font-family: 'Amphibia';
   font-size: 2.8rem;
+  word-break: break-all;
   color: var(--color-main);
   background-color: var(--color-gray);
   letter-spacing: 2px;
