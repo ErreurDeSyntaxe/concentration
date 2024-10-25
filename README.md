@@ -46,7 +46,7 @@ The project has two main goals of equal importance. First, I want to provide a f
   - [x] Flowchart
   - [x] Architecture
   - [x] UI Design
-- [x] Development
+- [ ] Development
   - [x] Basic HTML
     - [x] Title
     - [x] Meta
@@ -56,8 +56,9 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [x] Forget to Plan this Part
     - [x] Reshuffle Deck (Play Again)
     - [x] New Game (New Deck)
-  - [x] Fix bugs
+  - [ ] Fix bugs
     - [x] A card is created for an empty line in textarea (hitting enter after last word)
+    - [ ] Changing the vocab a few times leads to the app crashing
   - [x] UI
     - [x] Refined UI
     - [x] Color Palette
