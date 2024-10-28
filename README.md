@@ -46,7 +46,7 @@ The project has two main goals of equal importance. First, I want to provide a f
   - [x] Flowchart
   - [x] Architecture
   - [x] UI Design
-- [ ] Development
+- [x] Development
   - [x] Basic HTML
     - [x] Title
     - [x] Meta
