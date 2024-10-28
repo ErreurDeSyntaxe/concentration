@@ -56,9 +56,9 @@ The project has two main goals of equal importance. First, I want to provide a f
     - [x] Forget to Plan this Part
     - [x] Reshuffle Deck (Play Again)
     - [x] New Game (New Deck)
-  - [ ] Fix bugs
+  - [x] Fix bugs
     - [x] A card is created for an empty line in textarea (hitting enter after last word)
-    - [ ] Changing the vocab a few times leads to the app crashing
+    - [x] Changing the vocab a few times leads to the app crashing
   - [x] UI
     - [x] Refined UI
     - [x] Color Palette
